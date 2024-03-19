@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+<TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:text="SchoolAprovation"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="29dp" />
+
+    <EditText
+        android:id="@+id/note01"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="108dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:text="Note 1:"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="81dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="284dp"
+        android:text="Note 4:"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="81dp" />
+
+    <EditText
+        android:id="@+id/note03"
+        android:layout_width="204dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="284dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:text="Note 2:"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="81dp" />
+
+    <EditText
+        android:id="@+id/note02"
+        android:layout_width="204dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="164dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="204dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        android:text="Note 3:"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="81dp" />
+
+    <EditText
+        android:id="@+id/note04"
+        android:layout_width="204dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="220dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/calculateApprovation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="372dp"
+        android:text="Calculate"
+        android:onClick="calculateApprovation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top"
+        app:constraint_referenced_ids="note03,note01,textView,calculateApprovation,note02,textView3,textView3,textView3,textView3,note04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+
+</LinearLayout>

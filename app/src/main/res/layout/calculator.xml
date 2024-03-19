@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+<Button
+        android:id="@+id/btCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="55dp"
+        android:onClick="sum"
+        android:text="Sum"
+        app:layout_constraintBottom_toBottomOf="@+id/btFuelValidator"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number02" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:text="Simple Calculator"
+        app:layout_constraintStart_toStartOf="@+id/number01"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="6dp"
+        android:text="Number 1:"
+        app:layout_constraintBottom_toBottomOf="@+id/number01"
+        app:layout_constraintEnd_toStartOf="@+id/number01"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:text="Number 2:"
+        app:layout_constraintBaseline_toBaselineOf="@+id/number02"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/number01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="27dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/number02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="@+id/number01"
+        app:layout_constraintTop_toBottomOf="@+id/number01" />
+
+    <Button
+        android:id="@+id/btFuelValidator"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="105dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="103dp"
+        android:onClick="subtract"
+        android:text="Subtract"
+        app:layout_constraintBottom_toBottomOf="@+id/btSchoolAprovation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number02" />
+
+    <Button
+        android:id="@+id/btImc"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="50dp"
+        android:onClick="multiply"
+        android:text="Multiply"
+        app:layout_constraintBottom_toBottomOf="@+id/btSchoolAprovation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btFuelValidator" />
+
+    <Button
+        android:id="@+id/btSchoolAprovation"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="277dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="278dp"
+        android:onClick="divide"
+        android:text="Divide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+</LinearLayout>
